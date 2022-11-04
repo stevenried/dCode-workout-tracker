@@ -8,5 +8,52 @@
     <script src="./js/main.js" type="module"></script>
     <title>Workout Tracker with HTML, CSS, & JavaScript</title>
   </head>
-  <body></body>
+  <body>
+    <div id="app">
+      <table class="tracker" data-id="table">
+        <thead>
+          <tr class="tracker__row">
+            <th>Date</th>
+            <th>Workout</th>
+            <th>Duration</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="entries" data-id="table-body">
+          <tr class="tracker__row">
+            <td>
+              <input type="date" class="tracker__date" />
+            </td>
+            <td>
+              <select class="tracker__workout" name="" id="">
+                <option value="walking">Walking</option>
+                <option value="swimming">Swimming</option>
+                <option value="running">Running</option>
+                <option value="outdoor-cycling">Outdoor Cycling</option>
+                <option value="stationary-bike">Stationary Bike</option>
+                <option value="yoga">Yoga</option>
+                <option value="elliptical">Elliptical Machine</option>
+              </select>
+            </td>
+            <td>
+              <input type="number" class="tracker__duration" />
+              <span class="tracker__text">minutes</span>
+            </td>
+            <td>
+              <button type="button" class="tracker__button">&times;</button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="tracker__row tracker__row--add">
+            <td colspan="4">
+              <button type="button" class="tracker__add">
+                Add Entry &plus;
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
 </html>
