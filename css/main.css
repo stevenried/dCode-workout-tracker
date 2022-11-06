@@ -7,6 +7,7 @@ body {
   font-size: 14px;
   border-collapse: collapse;
   width: 600px;
+  margin-inline: auto;
 }
 
 .tracker,
@@ -31,8 +32,17 @@ body {
   color: #000;
 }
 
+.tracker__entries .tracker__row:hover {
+  background: rgba(216, 217, 218, 0.9);
+  color: #000;
+}
+
 .tracker__entries .tracker__row:nth-child(odd) {
   background: rgb(164, 165, 165);
+}
+
+.tracker__entries .tracker__row:nth-child(odd):hover {
+  background: rgba(164, 165, 165, 0.85);
 }
 
 .tracker__date,
@@ -70,6 +80,10 @@ body {
   background: rgba(0, 0, 0, 0.1);
 }
 
+.tracker__button:active {
+  background: #ddd;
+}
+
 .tracker__row--add {
   border-top: 3px solid rgb(215, 212, 212);
   border-bottom: 3px solid rgb(215, 212, 212);
@@ -88,6 +102,7 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 8px;
+  font-size: 1.1em;
 }
 
 .tracker__add:hover {
